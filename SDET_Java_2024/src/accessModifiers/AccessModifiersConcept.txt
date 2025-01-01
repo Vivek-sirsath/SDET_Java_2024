@@ -1,0 +1,23 @@
+Access Modifiers:-
+
+Access Modifiers defines the scope of variables and methods.
+
+# private - private variables and private methods we can access only within the class.
+  
+# default - No need to specify the default keyword in front of variables and methods.
+            default variables and default methods we can access within the package and
+            within all the classes in the same package.
+            
+# protected - protected variables and protected methods we can access outside of the
+              package also but through inheritance only.
+              Data members are accessible within the same package or subclasses in different packages.
+              
+# public - public variables and public methods we can access everywhere within the project.
+---------------------------------------------------------------------------------------------
+
+   # private ---  within same class level
+   # default ---  within same package level
+   # protected --- access outside of package but through inheritance only
+   # public --- project level
+
+
