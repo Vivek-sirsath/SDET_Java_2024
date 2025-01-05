@@ -1,0 +1,26 @@
+Polymorphism: 
+
+# One thing can have many forms
+
+# Shape - Circle, Triangle, Square, Rectangle are forms of shape.
+# Water - Vapor, IceBerg are forms of water.
+
+# We can achieve polymorphism using overloading.
+
+void m1()
+void m1()
+void m1()
+
+Same methods with same name will give error
+
+Types: Method Overloading , Constructor Overloading 
+
+[NOTE: We will not consider the return type of method.
+       We only consider the following rules]
+
+Four Rules of method overloading:-
+1) Method names should be same.
+2) Number of parameters should be different.
+3) Data type of parameters should be different.
+4) Order of parameters should be different.
+
