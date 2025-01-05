@@ -1,0 +1,12 @@
+// Session 12
+
+Encapsulation:-
+
+Wrapping of data and methods into a single unit(class).
+
+Rules: 
+1) All the variables in the class should be private.
+2) For every variable there should be 2methods (get and set)
+3) Variables can be operated only through methods. 
+   We cannot access those variable in another class directly using object of a class. 
+   We've to use getters and setters methods to access those private variables.
