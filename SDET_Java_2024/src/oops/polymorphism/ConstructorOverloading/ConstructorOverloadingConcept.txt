@@ -1,0 +1,4 @@
+Constructor: 
+
+# It is used to assign the values to the variables.
+# No operation should be performed in a constructor.
