@@ -1,0 +1,59 @@
+Q. What is Interface in Java ?
+
+1) An interface is a blue print of class.
+2) Interface contains final and static variables 
+3) Interface contains abstract methods. 
+   (Also allowed default methods & static methods from 'JAVA 8' onwards)
+4) An abstract method is a method contains signature but not body (Unimplemented method)
+   An interface only the declaration is there not Implementation. This type of method is called
+   abstract method.
+   Interface contains abstract methods.
+5) Methods in interface are public. Even if we don't specify the public keyword in front of method
+   by default the methods are public in Interface.
+   In normal class we've to specify the public keyword in front of method name.
+   [
+      By default Access Modifier:
+      If we don't specify any access modifier
+             In case of Class: default
+             In case of interface: public
+   ]
+6) Interface supports the functionality of multiple inheritance.
+7) We can define interface with interface keyword.
+8) A class extends another class.
+   An interface extends another interface.
+   A class implements an interface.
+   
+9) In case of class -  
+   We can use object reference variable and we can instantiate that class
+   e.g.
+       ClassName cObj = new ClassName();
+       'newClassName()' - instantiation of class.
+       cObj - object reference of class
+
+   In case of Interface - 
+   We can use object reference for interface but we cann't instantiate interface. 
+   e.g.
+      InterfaceName iObj = new InterfaceName(); // NOT POSSIBLE ****
+      new InterfaceName() - instantiation of interface. // NOT POSSIBLE ****
+      iObj - object reference of interface.
+      
+10) To use the abstract methods of interface there must be a class to implement that interface.
+    Without class there will be no use of interface, We cann't use interface without class. 
+11) We can create or use reference variable of interface that can hold the object of child class.
+    But we cann't instantiate interface.
+
+            Interface i = new ChildClass(); // POSSIBLE
+            
+            ChildClass cObj = new ChildClass(); // POSSIBLE 
+            
+          [ 
+            Interface i = new Interface(); // NOT POSSIBLE 
+            Instantiation of interface not possible.
+          ]  
+            
+12) Variables and methods created in an Interface are by default static and final.
+    There is no need to mention static and final keywords in front of them.
+    The variables will be shown in Italic style
+13) Only default and abstract methods are allowed in interface
+     We have to use default keyword in front of user defined methods.          
+                 
