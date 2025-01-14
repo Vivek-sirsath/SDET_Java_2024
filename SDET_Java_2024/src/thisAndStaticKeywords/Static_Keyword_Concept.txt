@@ -1,0 +1,42 @@
+Static keyword-
+
+static keyword can be applied to variables and methods.
+
+1) Static methods can access static stuff directly without creating object.
+2) Static methods can access non-static stuff through object.
+3) Non-static methods can access everything directly.
+
+
+Exercise:
+
+Q. How  we can access a variable outside of the class?
+   e.g.  How we can access String variable outside of class 
+         and how we can find length of variable outside of the class?
+   
+   public class Test {
+      
+      Static String s = "welcome";
+   }
+   
+ Answer: Test.s.length();
+ 
+ Q. What is System.out.println(), how it is derived?
+ Answer:
+ 
+   public class System {
+      
+      static PrintStream out; 
+   }
+   
+   -------------
+   System - PreDefined class
+   PrintStream - class
+   out - variable
+   println() is a method of PrintStream class
+   
+   So, outside of the System class we can access the out variable.
+   
+   System.out.println();
+   
+   
+   
