@@ -71,8 +71,8 @@ public class stringMethods {
 
 //		substring() - Extract sub string from the main string
 		// starting index - 0 1 2 3 4 5 6
-		// w e l c o m e
-		// ending index - 1 2 3 4 5 6 7
+		//                  w e l c o m e
+		//   ending index - 1 2 3 4 5 6 7
 
 		s = "welcome";
 		System.out.println(s.substring(1, 4)); // elc
