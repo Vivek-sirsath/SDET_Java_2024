@@ -1,0 +1,21 @@
+Type Casting:-
+
+It is conversion of one data type into another data type.
+
+Types:
+1) Up Casting / Widening : Converting the value from smaller --> larger
+   - UpCasting is automatic process. Means, we can directly store int value in long
+     and float value into double.
+  
+   e.g.
+         int --> long
+         float --> double
+
+2) Down Casting / Narrowing : Converting the value from larger --> smaller
+   - It is manual process. We have to do this explicitly
+  e.g.
+         long --> int
+         double --> float
+
+
+# Both are applicable for primitive data types as well as for objects also.
