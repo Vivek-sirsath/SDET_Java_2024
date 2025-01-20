@@ -1,0 +1,101 @@
+===============
+Wrapper Classes
+===============
+
+ # Two ways to define a string
+
+  1) String s = "Hello"; // This is as a variable
+  2) String s = new String("Welcome"); // This is as an object of String class.
+
+ # For every primitive data types there are wrapper classes are available
+
+  byte ---- Byte
+  short ---- Short
+  int ---- Integer
+  long ---- Long
+  float ---- Float
+  double ---- Double
+  char ---- Character
+  boolean ---- Boolean
+  
+  [Integer, Float....  are wrapper classes]
+---------------------------------------------------------------------------  
+  # Predefined classes are also available but those are not wrapper classes
+    because they are not representing any primitive data type.    
+    like-
+         String
+         ArrayList
+         HashSet
+---------------------------------------------------------------------------         
+  # When to use Wrapper Classes?
+    - For data conversion from one data type into another data type.
+    
+    Suppose, there are prices given in string format
+    String price1 = "150.50";
+    String price2 = "120.30";
+    
+    If we want to do addition,
+    price1 + price2 
+    It will concatenate the strings as - '150.50120.30'
+    
+    So,  we've to convert string variables into integer
+    
+    String ---> int (Target Type)        Integer.parseInt(String-value)
+    String ---> double (Target Type)     Double.parseDouble(String-value)
+    String ---> bool (Target Type)       Boolean.parseBoolean(String-value)
+    
+    String ---> char (Target Type)       NOT POSSIBLE
+    Because, String is a collection of characters and char is a single character
+    So, we cann't convert multiple character into a single character.
+    
+    ---------------------------------------------------------------------------
+    
+    # We can use wrapper classes along with the collections also
+    
+    ArrayList arr = new ArrayList();
+    
+    This will store multiple DataTypes like int, String, float, boolean....   
+    But if we want to store only Integer types, then we'll use wrapper class.
+    
+    ArrayList<Integer> arr = new ArrayList<Integer>(); // valid
+    
+    # We can not use primitive types in collections
+    ArrayList<int> arr = new ArrayList<int>(); // Invalid
+    
+   //////////////////////////////////////////////////////////////////////////////
+   
+   Miscellaneous Concepts:-
+   -----------------------
+   
+   Packages
+   --------
+   
+   There are 2 types of packages-
+   # Built-In packages
+     - e.g. 
+           java.util.Arrays
+     
+     java.util > Built-In package
+     Arrays > Built-In class
+   
+   # User defined packages
+  
+   # Built-In packages > Built-In classes > Built-In methods
+   # User defined packages > User defined classes > User defined methods
+  ----------------------------------------------------------------------- 
+   
+   Access Modifiers
+   ----------------
+   
+   # private
+   # default
+   # protected
+   # public
+    
+    
+    
+    
+    
+    
+    
+  
