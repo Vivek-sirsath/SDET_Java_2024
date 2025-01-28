@@ -1,0 +1,116 @@
+Exception Handling:-
+==================
+
+Two types of Errors:
+1) Syntax Errors - Because of invalid syntax of the program (Programming mistakes)
+   If syntax errors are present in a program, it will not execute.
+   
+2) Logical Errors - Program will execute but output we're expecting is not correct.
+   If logical errors are present in a program, it will execute but the output will be unexpected.
+   Because of wrong logic implementation.
+                        
+# Both of these errors comes due to user's mistakes.
+
+Exception:-
+=========
+
+# Types of exceptions -
+
+1) Checked Exceptions - The exceptions which are identified by JAVA compiler.
+   Can be handled by two ways-
+   1) Using try... catch block
+   2) Using 'throws' keyword
+   e.g. 
+        InterruptedException
+        FileNotFoundException
+        IOException
+        
+2) Unchecked Exceptions - The exceptions which are not identified by JAVA compiler.
+   e.g.
+        ArithmaticException
+        ArrayIndexOutOfBoundsException
+        NumberFormatException
+        NullPointerException (Runtime Exception)
+        
+# Handling Exception:- 
+
+try
+{
+Statement
+}
+catch(Exception e)
+{
+System.out.println(e.getMessage());
+}
+
+Note :
+1. Each try block can have one catch block
+2. We can have multiple try and catch blocks to handle more than one exception.
+3. We can have a single try with multiple catch blocks as well.
+4. Only one finally block is allowed to execute.
+==========================================================================
+==========================================================================
+
+// We can write n-number of catch block after one try block.
+
+public class MultipleCatchBlocks {
+
+	public static void main(String[] args) {
+		
+		String s = "Welcome";
+		System.out.println(s.length()); // 7
+		
+		String s1 = null;
+		
+		try
+		{
+		System.out.println(s1.length()); 
+		}
+		catch(ArithmeticException e)
+		{
+		System.out.println(e.getMessage());
+		}
+		catch(NullPointerException e)
+		{
+		System.out.println(e.getMessage());
+		}
+		catch(NumberFormatException e)
+		{
+		System.out.println(e.getMessage());
+		}
+		
+		System.out.println("Exception handled & program ended");
+
+	}
+}
+
+# This way is not feasible. If there is an exception other than mentioned
+  still we'll get exception.
+============================================================================
+
+finally block:-
+
+try
+{
+Statement
+}
+catch(Exception e)
+{
+System.out.println(e.getMessage());
+}
+finally
+{
+System.out.println(Finally block always execute);
+}
+
+
+# Case 1 : Exception thrown, catch block handled the exception --> finally block will execute
+# Case 2 : Exception thrown, catch block NOT handled the exception --> finally block will execute     
+# Case 3 : Exception NOT thrown, catch block ignored --> finally block will execute
+
+So, finally block will always execute.
+==============================================================================
+
+
+
+   
