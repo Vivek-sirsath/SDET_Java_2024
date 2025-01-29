@@ -24,7 +24,7 @@ public class Employee {
 		emp1.sal = 80000;
 		emp1.display();
 		
-		Employee emp2 = new Employee();
+		Employee emp2 = new Employee(); // emp1 is object 2 of class Employee
 		emp2.empId = 102;
 		emp2.empName = "Deepika";
 		emp2.job = "Software Developer";
