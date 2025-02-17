@@ -31,7 +31,7 @@ class Dog extends Animal {
 	}
 	
 	void eat() { // child class method
-//		System.out.println(" Child class method - eating bread...");
+//		System.out.println("Child class method - eating bread...");
 		super.eat(); 
 	}
 }
