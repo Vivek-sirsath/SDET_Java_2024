@@ -1,0 +1,132 @@
+Debugging :-
+---------
+Debugging is finding and fixing errors or bugs in the source code.
+
+What is a bug ?
+A bug is an error that causes our program to generate an unexpected output that is different from our expected output or no output. 
+What are some of the error codes you saw so far?
+
+CE - Compilation error / Syntax error
+RE - Run-time error
+WA - Wrong answer / Logical error
+TLE - Time limit exceeded
+
+Why is debugging necessary?
+To become good at coding, one must be a great debugger because it is the art of finding the errors inside a code,
+ and one who can find and understand errors can only solve them.
+ 
+#########################################################################################################################
+
+1) CE - Compilation error / Syntax error :-
+----------------------------------------
+Let us start with a Syntax error - We write code in any particular language and each language has its grammar, 
+so any kind of grammatical mistakes come under syntax error.
+e.g. - in English when we complete a sentence we use a full stop (.)
+Similarly, when we complete a line in Java we use a semicolon(;)
+- There should be one closing bracket for each opening bracket and 
+  the closing bracket should also be of the same type, like (),{},[]
+
+
+public class Main {
+    public static void main(String[] args) {
+        int Number = 19;
+        System.out.println(Number)
+    }
+}
+
+#############################################################################################
+
+2) RE - Run-time error :- 
+-----------------------
+
+Runtime error occurs when your syntax is correct but the compiler is still not able to run the code due to an error.
+
+e.g. 
+    int a = 5; 
+    int b = 0; 
+    int c = a/b; 
+    
+    If we run the above code, we will get this error:
+    
+    Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at Codechef.main(Main.java:3) 
+
+#############################################################################################
+
+Logical Error or Wrong Answer (WA) :-
+----------------------------------
+
+A logical error is an error in a program that occurs when the code compiles and runs without producing any error messages, 
+but it does not produce the expected or desired output.
+Instead, it performs a different computation or provides incorrect results due to a flaw in the algorithm or logic of the program.
+Typically, debugging logical errors requires more effort compared to other types of errors.
+
+They can be categorized into different types:
+1) Incorrect Conditions
+2) Incorrect Index
+3) Incorrect variable usage
+
+==============================================================================
+1) Incorrect Conditionals :-
+-------------------------
+   Incorrect conditionals are one of the most common types of logical errors, 
+   which can be seen while using conditional statements like if-else and loops. 
+   
+# e.g. 
+ 
+  The code below is supposed to do the following:
+
+- If an integer is even, then output True.
+- If an integer is odd, then output False.
+
+import java.util.Scanner;
+
+public class LogicalError_IncorrectCondition {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter the value of n:");
+		int n = scanner.nextInt();
+
+		if (n % 2 == 0) {  // Logical error - It should be : n % 2 == 1
+			System.out.println("false");
+		} else {
+			System.out.println("true");
+		}
+
+		scanner.close();
+	}
+
+}
+
+However, the code above is incorrect:
+
+Based on the requirement, if n % 2 == 1, i.e. for odd numbers - we should output false.
+
+==============================================================================
+2) Incorrect Index :-
+-------------------
+As our string uses zero-based indexing, many times we forget about it and write logic using one-based indexing, 
+which gives us the wrong answer. This incorrect indexing gives you a logical error.
+
+# e.g. 
+
+Program to print the last character of the string:
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt(); // Input length of the string
+
+        String s = scanner.next(); // Input string
+        System.out.println(s.charAt(n-1)); // Correct way
+        System.out.println(s.charAt(n));  // Incorrect way
+        scanner.close();
+    }
+}
+
+
+
