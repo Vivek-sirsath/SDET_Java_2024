@@ -2,3 +2,9 @@ Constructor:
 
 # It is used to assign the values to the variables.
 # No operation should be performed in a constructor.
+
+-- Overloading can be done by changing the order of the parameters.
+-- Overloading can be done by changing the number of parameters.
+-- Overloading can be done by having the same number of parameters but with different data types.
+
+# [We cannot overload constructors by changing the return type as constructors do not have a return type]
