@@ -26,7 +26,7 @@ public class InsertionInAnArray_CodeChef {
 
 		// Print the updated array
 		for (int i = 0; i < size; i++) {
-			System.out.print(array[i] + " ");
+			System.out.print(array[i] + " "); // 2 4 7 6 8 10 
 		}
 
 	}
