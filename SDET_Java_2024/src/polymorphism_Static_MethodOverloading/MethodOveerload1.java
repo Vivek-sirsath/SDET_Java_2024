@@ -1,11 +1,12 @@
 package polymorphism_Static_MethodOverloading;
 
+/*
 import org.testng.Assert;
 
-/* 
+ 
    This is Compile time Polymorphism 
-   Method name is same but parameters are different in Method Overloading
-   Another example of method overloading is in Assertion
+   Method name is same but parameters are different in Method Overloading.
+   Another example of method overloading is in TestNG Assertion
    e.g. 
          Assert.assertEqual(int actual , int expected);
          Assert.assertEqual(char actual , char expected);
