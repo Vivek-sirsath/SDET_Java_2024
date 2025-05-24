@@ -1,0 +1,20 @@
+package polymorphism_Runtime_MethodOverriding;
+
+public class MethodOverride6 extends MethodOverride5 {
+
+	// Method name and parameters same, body different
+	public void cook() { 
+		System.out.println("Sister is cooking");
+	}
+	
+	public void angry() { 
+		System.out.println("Father is angry");
+	}
+
+	/*
+	public void handwash() {
+		System.out.println("No handwash");
+	}
+*/
+	
+}
