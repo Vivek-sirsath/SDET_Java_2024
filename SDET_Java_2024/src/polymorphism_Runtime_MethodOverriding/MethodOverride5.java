@@ -10,7 +10,7 @@ public class MethodOverride5 {
 		System.out.println("I am eating");
 	}
 	
-	public void handwash() {
-		System.out.println("Daily handwash");
+	public void handWash() {
+		System.out.println("Daily handWash");
 	}
 }

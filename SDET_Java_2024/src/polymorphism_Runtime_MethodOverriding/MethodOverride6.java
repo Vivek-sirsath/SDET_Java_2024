@@ -12,8 +12,8 @@ public class MethodOverride6 extends MethodOverride5 {
 	}
 
 	/*
-	public void handwash() {
-		System.out.println("No handwash");
+	public void handWash() {
+		System.out.println("No handWash");
 	}
 */
 	
